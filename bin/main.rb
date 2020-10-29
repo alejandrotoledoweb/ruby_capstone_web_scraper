@@ -33,11 +33,11 @@ end
 
 class FirstSetup
   def first_message
-    'This is the scraper app for Bento.io web page/n'
+    'This is the scraper app for Bento.io web page'
   end
 
   def first_instructions
-    'We have 20 tracks to follow, please type a number between 1 ~ 20 to see tracks'
+    '- We have 20 tracks to follow, please type a number between 1 ~ 20 to see tracks'
   end
 end
 
