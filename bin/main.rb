@@ -27,7 +27,6 @@ class ScraperClass
       puts item[:url]
       puts "\n"
     end
-
   end
 end
 
@@ -37,7 +36,7 @@ class FirstSetup
   end
 
   def first_instructions
-    '- We have 20 tracks to follow, please type a number between 1 ~ 20 to see tracks'
+    '- We have 20 tracks to follow!!'
   end
 end
 
@@ -50,7 +49,12 @@ continue = true
 
 while continue
   puts init.first_instructions
-  puts 'Do you want to see the tracks available: type "Y"'
-  scraper_web.scraper
+  puts 'Do you want to see the tracks available: type "y" or type any other key'
+  user_choice = gets.chomp.upcase
+  if user_choice == 'Y'
+    scraper_web.scraper
+  else
+    puts 'Thank you, End of the scraper app'
+  end
   continue = false
 end
