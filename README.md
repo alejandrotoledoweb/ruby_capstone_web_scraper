@@ -1,6 +1,5 @@
-# ruby_capstone_web_scraper
+# Ruby_capstone_web_scraper
 
-> Building a scraper app in Ruby
  In this repository I build a scraper app that obtain a list of track from `https://bento.io` and show the data in the terminal as just text.
  I chose this web page becasuse is a good resource I used for learning at the beginning before starting Microverse.
 
