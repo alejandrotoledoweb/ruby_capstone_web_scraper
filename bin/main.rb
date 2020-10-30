@@ -29,11 +29,11 @@ end
 next_data = true
 
 while next_data
-  puts 'for see description of:'
+  puts 'For see more description of:'
   puts "\n"
-  puts 'WEB type 1'
+  puts 'WEB track, type 1'
   puts "\n"
-  puts 'HTML type 2'
+  puts 'HTML track, type 2'
   user_next = gets.chomp
 
   case user_next.to_i
