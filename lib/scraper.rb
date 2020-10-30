@@ -1,5 +1,5 @@
 class ScraperClass
-  attr_reader :track_arr, :number_user
+  attr_reader :track_arr
 
   def scraper
     url = 'https://bento.io/tracks'
