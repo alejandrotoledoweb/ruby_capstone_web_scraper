@@ -29,16 +29,19 @@ end
 next_data = true
 
 while next_data
-  puts 'If you want to see a description of the first track type "Y" again'
-  user_next = gets.chomp.upcase
-  if user_next == 'Y'
-    puts scraper_web.scrape_more('https://bento.io/topic/web')
-  else 
-    puts 'Thank you, End of the Scraper App'
-  end
+  puts 'for see description of:'
   puts "\n"
-  puts 'Thank you, End of the Scraper App'
+  puts 'WEB type 1'
+  puts "\n"
+  puts 'HTML type 2'
+  user_next = gets.chomp
+
+  case user_next.to_i
+
+  when 1
+    scraper_web.scrap_web
+  when 2
+    scraper_web.scrap_html
+  end
   next_data = false
 end
-
-

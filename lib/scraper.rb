@@ -1,5 +1,6 @@
+# this is the main class for app
 class ScraperClass
-  attr_reader :track_arr, :track_listing
+  attr_reader :track_arr, :track_listing, :overview
   attr_accessor :url
 
   def initialize(url)
@@ -33,12 +34,21 @@ class ScraperClass
     end
   end
 
-  def scrap_more(url_more)
-    unparsed_page = HTTParty.get(url_more)
-    parsed_page = Nokogiri::HTML(unparsed_page)
-    @track_listing_more = parsed_page.css('div.track-body') # 1 description
-    overview = @track_listing_more[0].children[1].t
-    ext
-    overview
+  def scrap_web
+    url_web = 'https://bento.io/topic/web'
+    unparsed_page_web = HTTParty.get(url_web)
+    parsed_page_web = Nokogiri::HTML(unparsed_page_web)
+    @track_listing_web = parsed_page_web.css('div.track-body') # 1 description
+    @overview = @track_listing_web[0].children[1].text
+    puts @overview
+  end
+
+  def scrap_html
+    url_html = 'https://bento.io/topic/html'
+    unparsed_page_html = HTTParty.get(url_html)
+    parsed_page_html = Nokogiri::HTML(unparsed_page_html)
+    @track_listing_html = parsed_page_html.css('div.track-body') # 1 description
+    @overview_html = @track_listing_html[0].children[1].text
+    puts @overview_html
   end
 end
