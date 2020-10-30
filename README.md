@@ -6,9 +6,6 @@
 
  ## images
 
- [scraper_code](./scraper_method.png)
- [scraper_in_terminal](./scraper_in_terminal.png)
-
  ## Specificacion of the project
 
  You can find the specifiaction in this [link](https://www.notion.so/Build-your-own-scraper-f54eaca54d8a4d758a5f0141468127a8)
