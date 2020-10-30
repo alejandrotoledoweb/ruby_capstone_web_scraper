@@ -1,20 +1,20 @@
 # this is the main class for app
 class ScraperClass
-  attr_reader :track_arr, :track_listing, :overview
-  attr_accessor :url
+  attr_reader :track_listing, :overview
+  attr_accessor :url, :parsed_page, :unparsed_page, :track_arr
 
   def initialize(url)
     @url = url
   end
 
   def scraper
-    unparsed_page = HTTParty.get(url)
-    parsed_page = Nokogiri::HTML(unparsed_page)
-    @track_arr = []
-    @track_listing = parsed_page.css('a.track') # 20 tracks
+    @unparsed_page = HTTParty.get(@url)
+    @parsed_page = Nokogiri::HTML(@unparsed_page)
+    @track_listing = @parsed_page.css('a.track') # 20 tracks
   end
 
   def scraper_tracks
+    @track_arr = []
     @track_listing.each do |track_item|
       @tracks = {
         title: track_item.css('div.track-content')[0].children.children[0].text,
@@ -54,9 +54,22 @@ class ScraperClass
 
   private
 
-  def save_data
-    @track_arr.each do |node|
-      puts node.txt
+  def complete_page
+    parsed_page(@url)
+  end
+
+  def categories
+    @tracks_all = []
+    fetch_title.each do |cat|
+      cat_node = cat.css('div.track-content')[0].children.children[0].text
+      cat_node.each do |node|
+        @tracks_all << node.css('div.track-content')[0].children.children[0].text
+      end
     end
+    @tracks_all
+  end
+
+  def fetch_title
+    complete_page.css('a.track')
   end
 end
