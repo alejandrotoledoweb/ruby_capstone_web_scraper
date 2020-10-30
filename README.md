@@ -1,16 +1,16 @@
 # Ruby_capstone_web_scraper
 
  In this repository I build a scraper app that obtain a list of track from `https://bento.io` and show the data in the terminal as just text.
- I chose this web page becasuse is a good resource I used for learning at the beginning before starting Microverse.
+ I chose this web page becasuse is a good resource I used for learning before starting Microverse.
 
  ## Images
 
  ![scraper_code](./scraper_method.png)
  ![scraper_in_terminal](./scraper_in_terminal.png)
 
- ## Specificacion of the project
+ ## Specifications of the project
 
- You can find the specifiaction in this [link](https://www.notion.so/Build-your-own-scraper-f54eaca54d8a4d758a5f0141468127a8)
+ You can find the specifiactions in this [link](https://www.notion.so/Build-your-own-scraper-f54eaca54d8a4d758a5f0141468127a8)
  
  ## bin
 
