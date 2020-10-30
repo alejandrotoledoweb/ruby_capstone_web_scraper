@@ -36,7 +36,9 @@ class ScraperClass
   def scrap_more(url_more)
     unparsed_page = HTTParty.get(url_more)
     parsed_page = Nokogiri::HTML(unparsed_page)
-    track_listing = parsed_page.css('a.track') # 20 tracks
+    @track_listing_more = parsed_page.css('div.track-body') # 1 description
+    overview = @track_listing_more[0].children[1].t
+    ext
+    overview
   end
 end
-

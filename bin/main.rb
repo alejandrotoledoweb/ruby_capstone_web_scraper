@@ -25,3 +25,20 @@ while continue
   end
   continue = false
 end
+
+next_data = true
+
+while next_data
+  puts 'If you want to see a description of the first track type "Y" again'
+  user_next = gets.chomp.upcase
+  if user_next == 'Y'
+    puts scraper_web.scrape_more('https://bento.io/topic/web')
+  else 
+    puts 'Thank you, End of the Scraper App'
+  end
+  puts "\n"
+  puts 'Thank you, End of the Scraper App'
+  next_data = false
+end
+
+
