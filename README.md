@@ -6,8 +6,8 @@
 
  ## Images
 
- [scraper_code](./scraper_method.png)
- [scraper_in_terminal](./scraper_in_terminal.png)
+ ![scraper_code](./scraper_method.png)
+ ![scraper_in_terminal](./scraper_in_terminal.png)
 
  ## Specificacion of the project
 
