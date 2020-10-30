@@ -50,7 +50,7 @@ Only Ruby.
 👤  **Alejandro Toledo**
 - GitHub: [@alejandrotoledoweb](https://github.com/alejandrotoledoweb)
 - Twitter: [@alejot](https://twitter.com/alejot)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/alejandro-toledo-3b444b109/)
+- LinkedIn: [Alejandro Toledo](https://www.linkedin.com/in/alejandro-toledo-3b444b109/)
 
 ## 🤝 Contributing
 
