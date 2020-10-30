@@ -51,4 +51,12 @@ class ScraperClass
     @overview_html = @track_listing_html[0].children[1].text
     puts @overview_html
   end
+
+  private
+
+  def save_data
+    @track_arr.each do |node|
+      puts node.txt
+    end
+  end
 end
