@@ -4,6 +4,11 @@
  In this repository I build a scraper app that obtain a list of track from `https://bento.io` and show the data in the terminal as just text.
  I chose this web page becasuse is a good resource I used for learning at the beginning before starting Microverse.
 
+ ## images
+
+ [scraper_code](./scraper_method.png)
+ [scraper_in_terminal](./scraper_in_terminal.png)
+
  ## Specificacion of the project
 
  You can find the specifiaction in this [link](https://www.notion.so/Build-your-own-scraper-f54eaca54d8a4d758a5f0141468127a8)
@@ -60,4 +65,4 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-One of the Odin projects.
+Ruby Capstone Project for Microverse Program
