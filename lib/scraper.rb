@@ -1,8 +1,12 @@
 class ScraperClass
-  attr_reader :track_arr
+  attr_reader :track_arr, :track_listing
+  attr_accessor :url
+
+  def initialize(url)
+    @url = url
+  end
 
   def scraper
-    url = 'https://bento.io/tracks'
     unparsed_page = HTTParty.get(url)
     parsed_page = Nokogiri::HTML(unparsed_page)
     track_arr = []

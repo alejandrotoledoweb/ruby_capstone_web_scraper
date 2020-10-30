@@ -7,7 +7,7 @@ require 'httparty'
 require 'rubocop'
 
 init = FirstSetup.new
-scraper_web = ScraperClass.new
+scraper_web = ScraperClass.new('https://bento.io/tracks')
 
 puts init.first_message
 
