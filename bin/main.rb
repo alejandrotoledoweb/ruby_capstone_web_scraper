@@ -18,6 +18,8 @@ while continue
   user_choice = gets.chomp.upcase
   if user_choice == 'Y'
     scraper_web.scraper
+    scraper_web.scraper_tracks
+    scraper_web.print_data
   else
     puts 'Thank you, End of the scraper app'
   end
