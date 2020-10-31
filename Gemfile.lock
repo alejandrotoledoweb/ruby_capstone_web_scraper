@@ -2,7 +2,6 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.1)
-    colorize (0.8.1)
     diff-lcs (1.4.3)
     mini_portile2 (2.4.0)
     nokogiri (1.10.7)
