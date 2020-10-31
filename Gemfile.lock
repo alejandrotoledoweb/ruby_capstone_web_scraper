@@ -4,9 +4,8 @@ GEM
     ast (2.4.1)
     colorize (0.8.1)
     diff-lcs (1.4.3)
-    jaro_winkler (1.5.4)
     mini_portile2 (2.4.0)
-    nokogiri (1.10.9)
+    nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
     parallel (1.19.2)
     parser (2.7.1.4)
@@ -27,7 +26,6 @@ GEM
       rspec-support (~> 3.9.0)
     rspec-support (3.9.3)
     rubocop (0.81.0)
-      jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.7.0.1)
       rainbow (>= 2.2.2, < 4.0)
@@ -41,7 +39,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  nokogiri
+  nokogiri (~> 1.10.7)
   rspec (~> 3.5)
   rubocop (~> 0.81.0)
 
