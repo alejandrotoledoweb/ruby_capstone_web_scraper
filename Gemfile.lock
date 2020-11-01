@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.1)
+    colorize (0.8.1)
     diff-lcs (1.4.3)
     mini_portile2 (2.4.0)
     nokogiri (1.10.7)
@@ -25,6 +26,7 @@ GEM
       rspec-support (~> 3.9.0)
     rspec-support (3.9.3)
     rubocop (0.81.0)
+      jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
       parser (>= 2.7.0.1)
       rainbow (>= 2.2.2, < 4.0)
@@ -38,7 +40,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  nokogiri (~> 1.10.7)
+  nokogiri
   rspec (~> 3.5)
   rubocop (~> 0.81.0)
 
