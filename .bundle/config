@@ -1,3 +1,0 @@
----
-BUNDLE_PATH: "vendor/bundle"
-bundle config set deployment 'true'
