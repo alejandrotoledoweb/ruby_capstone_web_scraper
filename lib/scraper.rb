@@ -11,6 +11,7 @@ class ScraperClass
     @unparsed_page = HTTParty.get(@url)
     @parsed_page = Nokogiri::HTML(@unparsed_page)
     @track_listing = @parsed_page.css('a.track') # 20 tracks
+    @track_listing
   end
 
   def scraper_tracks
@@ -23,6 +24,7 @@ class ScraperClass
       }
       @track_arr << @tracks
     end
+    @track_arr
   end
 
   def print_data
