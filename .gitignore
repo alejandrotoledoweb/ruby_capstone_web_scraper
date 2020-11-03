@@ -5,4 +5,3 @@ package-lock.json
 .rubocop.yml
 .bundle/
 vendor/
-Gemfile.lock
