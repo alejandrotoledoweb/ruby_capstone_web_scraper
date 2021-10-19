@@ -28,7 +28,9 @@ class ScraperClass
   end
 
   def print_data
-    @track_arr.each do |item|
+    @track_arr.each_with_index do |item, idx|
+      puts "\n"
+      puts "Track No. #{idx+1}"
       puts item[:title]
       puts item[:description]
       puts item[:url]
